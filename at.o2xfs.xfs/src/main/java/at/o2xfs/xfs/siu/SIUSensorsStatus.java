@@ -114,6 +114,14 @@ public class SIUSensorsStatus {
 		return portStates;
 	}
 
+	public SIUHeadsetMicroPhoneState getHandsetMicroPhoneState() {
+		return getState(SIUSensor.HEADSETMICROPHONE, SIUHeadsetMicroPhoneState.class);
+	}
+
+	public SIUFasciaMicrophoneState getFasciaMicrophoneState() {
+		return getState(SIUSensor.FASCIAMICROPHONE, SIUFasciaMicrophoneState.class);
+	}
+
 	@Override
 	public String toString() {
 		return new ToStringBuilder(this).append("operatorSwitchState", getOperatorSwitchState())
@@ -129,6 +137,8 @@ public class SIUSensorsStatus {
 										.append("operatorCallButtonState", getOperatorCallButtonState())
 										.append("handsetState", getHandsetState())
 										.append("generalPurposeInputPortStates", getGeneralPurposeInputPortStates())
+										.append("handsetMicroPhoneState", getHandsetMicroPhoneState())
+										.append("fasciaMicrophoneState", getFasciaMicrophoneState())
 										.toString();
 	}
 }
