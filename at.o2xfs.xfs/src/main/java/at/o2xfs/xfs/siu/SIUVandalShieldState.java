@@ -74,7 +74,7 @@ public enum SIUVandalShieldState implements XfsConstant {
     /**
      * The Vandal Shield has potentially been tampered with.
      */
-    TAMPERED(0x0010L);
+    TAMPERED(0x00100L);
 
 	private final long value;
 
