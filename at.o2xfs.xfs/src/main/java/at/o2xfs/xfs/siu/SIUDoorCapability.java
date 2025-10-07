@@ -49,7 +49,12 @@ public enum SIUDoorCapability implements XfsConstant {
 	/**
 	 *
 	 */
-	BOLTED(0x0008L);
+	BOLTED(0x0008L),
+
+    /**
+     *
+     */
+    TAMPERED(0x0010L);
 
 	private final long value;
 

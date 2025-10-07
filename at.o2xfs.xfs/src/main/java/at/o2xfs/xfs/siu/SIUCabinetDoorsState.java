@@ -54,7 +54,12 @@ public enum SIUCabinetDoorsState implements XfsConstant {
 	/**
 	 * All Cabinet Doors are closed, locked and bolted.
 	 */
-	BOLTED(0x0008L);
+	BOLTED(0x0008L),
+
+    /**
+     * At least one of the Safe Doors has potentially been tampered with
+     */
+    TAMPERED(0x0010L);
 
 	private final long value;
 
